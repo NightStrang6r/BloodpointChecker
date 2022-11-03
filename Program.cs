@@ -107,7 +107,7 @@ WebHeaderCollection GetHeaders(string bhvrSession)
 
 bool CheckBhvrSession(string bhvrSession)
 {
-    if (bhvrSession.Length != 346) return false;
+    if (bhvrSession.Length < 300) return false;
     return true;
 }
 
@@ -122,7 +122,7 @@ void PrintLogo()
     Console.WriteLine("██████╔╝██║         ╚██████╗██║  ██║███████╗╚██████╗██║  ██╗███████╗██║  ██║");
     Console.WriteLine("╚═════╝ ╚═╝          ╚═════╝╚═╝  ╚═╝╚══════╝ ╚═════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝");
     Console.ForegroundColor = ConsoleColor.Red;
-    Console.WriteLine("\nv1.0.0");
+    Console.WriteLine("\nv1.1.0");
     Console.ForegroundColor = ConsoleColor.Cyan;
     Console.WriteLine("By NightStranger\n\n");
     Console.ForegroundColor = ConsoleColor.White;
